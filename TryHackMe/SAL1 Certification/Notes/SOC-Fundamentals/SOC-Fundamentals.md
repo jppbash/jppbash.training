@@ -19,7 +19,7 @@ We must understand that despite the constant technological evolution, **people i
 
 If there is no human intervention in a SOC environment, it is most likely you will focus on irrelevant issues. People helps the security solution to truly identiy potential harmful activities and enable a proper response. People is known in a SOC team, having the following roles and responsibilities:
 
-![](/TryHackMe/SAL1/.SOC-Fundamentals-Roles.png)
+![](/TryHackMe/SAL1%20Certification/Notes/SOC-Fundamentals/Fig1-Roles.png)
 
 * **SOC Analyst (Level 1):** First responders to any detection. Basic alert triage and reporting through proper channels.
 * **SOC Analyst (Level 2):** Dive deeper into investigations and correlate data from multiple sources.
@@ -35,6 +35,8 @@ Each role has its own processes. Let's discuss some important processes involved
 
 ### Alert Triage
 Basis of SOC team. First reponse to any alert. Focused on analysing the specific alert, determining its severity and helps in the priorisation. It answers the 5 Ws as shown below.
+
+![](/TryHackMe/SAL1%20Certification/Notes/SOC-Fundamentals/Fig2-Alert-Triage.png)
 
 **Alert:** Ransomware detected on host **WINSERVER2022-MAIN-VLAN20**
 
@@ -82,7 +84,7 @@ You are the Level 1 Analyst of your organization’s SOC team. You receive an al
 
 **What: Activity that triggered the alert?**
 
-* A port scan because if was notified by the VA team.
+* A port scan. The vulnerability assessment team made that notification therefore it is important to have that in mind while doing the rest of analysis of the alert.
 
 **When: Time of the activity?**
 
