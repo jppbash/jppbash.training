@@ -95,7 +95,7 @@ Opening the text file we see the answer which is: **https<nolink>://2023-coldsto
 
 9.  **The scope of the incident is huge as Forela's s3 buckets were also compromised and several GB of data were stolen and leaked. It was also discovered that the attackers used social engineering to gain access to sensitive data and extort it. What is the internal email address used by the attacker in the phishing email to gain access to sensitive data stored on s3 buckets?**
 
-Getting back to the PDF file at the end of the document we have the email address which is **itsupport<nolink>@forela.co.uk** .
+Getting back to the text file at the end of the document we have the email address which is **archivebackups<nolink>@forela.co.uk**.
 
 I hope you enjoyed and also learn. I found fun to do some investigation, explore some tools in this case WireShark and leveraged some features that I find it very useful. Happy hunting and pwning.
 
