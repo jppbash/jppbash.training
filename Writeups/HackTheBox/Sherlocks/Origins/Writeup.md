@@ -16,7 +16,7 @@ Opening the file named `ftp.pcap` we can review the following: it has a total of
 
 Before applying any kind of filtering, let's do something easier. Head to Statistics -> Conversations and checking both the IPv4 and TCP tabs, we can analyse the following:
 
-![](/Walkthroughs/HackTheBox/Sherlocks/Origins/Figure1.jpg)
+![](/Writeups/HackTheBox/Sherlocks/Origins/Figure1.jpg)
 
 * The IP address ***15.206.185.207*** (Now *AttackerIP*) is sending 444 packets to the server, which IP address is ***172.31.45.144*** (*ServerIP*).
 * AttackerIP is sending 70 packets to ServerIP via port 21, which is referred to the FTP service. 
@@ -31,7 +31,7 @@ To mitigate such attacks, techniques like rate limiting, account lockouts, and s
 
 This is quite straight forward. We can use any geoIP online tool like `ipinfo` for instance. For this case I opted for `ip-lookup` from [iplocation](https://www.iplocation.net/ip-lookup). This is a very powerful tool because it also extracts data from common locators such as `ipinfo, DB-IP, IP2Location, etc`. Analysing the data from this tool, we can appreciate the IP address belongs to India, more specifically to **Mumbai**, our second answer.
 
-![](/Walkthroughs/HackTheBox/Sherlocks/Origins/Figure2.jpg)
+![](/Writeups/HackTheBox/Sherlocks/Origins/Figure2.jpg)
 
 3. **Which FTP application was used by the backup server? Enter the full name and version. (Format: Name Version)**
 
@@ -57,7 +57,7 @@ Understanding these codes is crucial for diagnosing issues and analyzing FTP tra
 
 For this exercise, we can use the filter `ftp` which only focuses on showing FTP packets. In the Info column, you will notice all the activity over the FTP server. When you get a 220 response, it normally shows you the name of the service/daemon including the version. For this exercise it is **vsFTPd 3.0.5**.
 
-![](/Walkthroughs/HackTheBox/Sherlocks/Origins/Figure3.jpg)
+![](/Writeups/HackTheBox/Sherlocks/Origins/Figure3.jpg)
 
 4. **The attacker has started a brute force attack on the server. When did this attack start?**
 
@@ -71,7 +71,7 @@ In logs from a server, reports of a SIEM and a pcap like this, we can easily con
 
 Using the `ftp` filter, let's look for a packet. When a successful login is done you receive a 230 response from the FTP server. For this, let's go to Go -> Go to Packet and you will receive a text box below the filter. Select `string` and sue the `successful` key word. We can follow that TCP stream and we can see that the username and password is **forela-ftp:ftprocks69$**
 
-![](/Walkthroughs/HackTheBox/Sherlocks/Origins/Figure4.jpg)
+![](/Writeups/HackTheBox/Sherlocks/Origins/Figure4.jpg)
 
 
 6. **The attacker has exfiltrated files from the server. What is the FTP command used to download the remote files?**
