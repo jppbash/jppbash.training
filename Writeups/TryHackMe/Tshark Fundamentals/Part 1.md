@@ -41,13 +41,13 @@ Now practicing a little bit here are the results:
 
 Checking out the version of the tool.
 
-![Figure 1 - TShark Version](/TryHackMe/Tshark%20Fundamentals/Pictures/Tshark1-version.png)
+![Figure 1 - TShark Version](/Writeups/TryHackMe/Tshark%20Fundamentals/Pictures/Tshark1-version.png)
 
 #### **Sniffing** 
 Be aware that a computer can have multiple network interfaces allowing the host to communicate and sniff the traffic throughout the network. Therefore, it is importante to specify interfaces with particular jobs. Viewing the available interfaces in this VM.
 
-![Figure 2 - TShark Available Interfaces](/TryHackMe/Tshark%20Fundamentals/Pictures/Tshark2-interfaces.png)
+![Figure 2 - TShark Available Interfaces](/Writeups/TryHackMe/Tshark%20Fundamentals/Pictures/Tshark2-interfaces.png)
 
 Sniffing can be done without selecting an interfaces. No interfaces means an anlias for `-i 1`. Setting a different sniffing interface is done using the `-i` parametres. TShark always echoes the used interface name at the beginning of the sniffing.
 
-![Figure 3 - TShark Sniffing](/TryHackMe/Tshark%20Fundamentals/Pictures/Tshark3-sniffing.png)
+![Figure 3 - TShark Sniffing](/Writeups/TryHackMe/Tshark%20Fundamentals/Pictures/Tshark3-sniffing.png)
