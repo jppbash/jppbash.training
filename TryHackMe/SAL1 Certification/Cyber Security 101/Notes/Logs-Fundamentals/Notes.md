@@ -54,7 +54,7 @@ The following picture shows a Windows Event Log and the following components are
 
 <div align="center">
 
-![](/TryHackMe/SAL1%20Certification/Notes/Logs-Fundamentals/Logs-Fundamentals-Figure1.png)
+![](/TryHackMe/SAL1%20Certification/Cyber%20Security%20101/Notes/Logs-Fundamentals/Logs-Fundamentals-Figure1.png)
 
 </div>
 

@@ -74,7 +74,7 @@ You can download the attached file below to your local machine for inspection.
 
 **Note:** For this scenario, I downloaded the content to a Ubuntu VM in VMware Workstation and rename it to *evidence.zip* as shown in the figure below:
 
-![](/TryHackMe/SAL1%20Certification/Notes/Digital-Forensics-Fundamentals/Digital-Forensics-Exercise-Figure1.png)
+![](/TryHackMe/SAL1%20Certification/Cyber%20Security%20101/Notes/Digital-Forensics-Fundamentals/Digital-Forensics-Exercise-Figure1.png)
 
 When you create a text file, TXT, some metadata gets saved by the operating system, such as file creation date and last modification date. However, much information gets kept within the file’s metadata when you use a more advanced editor, such as MS Word. There are various ways to read the file metadata; you might open them within their official viewer/editor or use a suitable forensic tool. Note that exporting the file to other formats, such as `PDF`, would maintain most of the metadata of the original document, depending on the PDF writer used.
 
@@ -92,7 +92,7 @@ There are many online and offline tools to read the EXIF data from images. One c
 
 <div align = "center">
     
-![](/TryHackMe/SAL1%20Certification/Notes/Digital-Forensics-Fundamentals/Digital-Forensics-Exercise-Figure2.png)
+![](/TryHackMe/SAL1%20Certification/Cyber%20Security%20101/Notes/Digital-Forensics-Fundamentals/Digital-Forensics-Exercise-Figure2.png)
 
 </div>
 
@@ -100,17 +100,17 @@ There are many online and offline tools to read the EXIF data from images. One c
 
 This command gives us loads of information like creator, profile descrption, permissons, siez, compression algorithm (in this case JPEG) and others. This question is referring to a location, perhaps filtering by GPS might give us the information we're looking for. Therefore I used the command `exiftool letter-image.jpg | grep "GPS"` and bingo, the **GPS Position** seems useful to put it on Google Maps.
 
-![](/TryHackMe/SAL1%20Certification/Notes/Digital-Forensics-Fundamentals/Digital-Forensics-Exercise-Figure3.png)
+![](/TryHackMe/SAL1%20Certification/Cyber%20Security%20101/Notes/Digital-Forensics-Fundamentals/Digital-Forensics-Exercise-Figure3.png)
 
 Search for the coordinates 51°30'51.9"N 0°05'38.7"W in Google Maps and we have revealed like an alleyway in Central London between St. Paul's and Bank Stations of the Central Line London Underground. It exactly refers to Milk St. 
 
-![](/TryHackMe/SAL1%20Certification/Notes/Digital-Forensics-Fundamentals/Digital-Forensics-Exercise-Figure4.png)
+![](/TryHackMe/SAL1%20Certification/Cyber%20Security%20101/Notes/Digital-Forensics-Fundamentals/Digital-Forensics-Exercise-Figure4.png)
 
 3. **What is the model name of the camera used to take this photo?**
 
 This is another filter used in the `exiftool` tool. I used the command `exiftool letter-image.jpg | grep -i "camera"` since we are looking for the camera model and the word *"camera"* I consider it key. With that in mind, after executing the command, we find out that the Camera Model Name is a **Canon EOS R6**
 
-![](/TryHackMe/SAL1%20Certification/Notes/Digital-Forensics-Fundamentals/Digital-Forensics-Exercise-Figure5.png)
+![](/TryHackMe/SAL1%20Certification/Cyber%20Security%20101/Notes/Digital-Forensics-Fundamentals/Digital-Forensics-Exercise-Figure5.png)
 
 ## Conclusion
 
